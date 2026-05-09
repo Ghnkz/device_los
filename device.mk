@@ -40,6 +40,7 @@ $(call inherit-product-if-exists, vendor/xiaomi/sweet-miuicamera/products/miuica
 PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Audio
+$(call inherit-product, vendor/dolby/config.mk)
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl \
     android.hardware.audio.effect@7.0-impl \
