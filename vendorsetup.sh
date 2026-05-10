@@ -9,4 +9,6 @@ git clone https://gitlab.com/unsatifsed27/miuicamera -b leica vendor/xiaomi/swee
 
 git clone https://github.com/Ghnkz/sony_vendor_dolby vendor/dolby
 
+git clone https://github.com/Ghnkz/vendor_lineage-priv vendor/lineage-priv
+
 rm -rf hardware/xiaomi && git clone https://github.com/Ghnkz/android_hardware_xiaomi -b lineage-20 hardware/xiaomi
