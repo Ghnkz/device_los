@@ -12,6 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit some common Lineage stuff.
+WITH_GAPPS := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_sweet
@@ -25,11 +26,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Blur
-TARGET_ENABLE_BLUR := true
-
-# Pixel Stuff
-TARGET_INCLUDE_PIXEL_CHARGER := true
-
-# Quick Tap
-TARGET_SUPPORTS_QUICK_TAP := true
+# Keys
+$(call inherit-product, vendor/private/keys/keys.mk)
