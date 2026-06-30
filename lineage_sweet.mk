@@ -27,4 +27,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Keys
-$(call inherit-product, vendor/private/keys/keys.mk)
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
